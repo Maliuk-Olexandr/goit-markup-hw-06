@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-виконання ДЗ 5
+# goit-markup-hw-06
+виконання ДЗ 6

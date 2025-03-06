@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
   </head>
   <body>
     <!-- #region header -->
@@ -53,8 +53,101 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
+        <!-- mobile menu -->
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-conteiner">
+        <button class="close" type="button" data-menu-close>
+          <svg class="modal-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item active">
+              <a href="/" class="link-header">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="link-header">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="link-header">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-address-header">
+          <ul class="mobile-address-list">
+            <li>
+              <a href="tel:+110001111111" class="burger-phone link-address"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link-address"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="no-referrer noopener nofollow"
+            >
+              <svg class="team-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="no-referrer noopener nofollow"
+            >
+              <svg class="team-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="no-referrer noopener nofollow"
+            >
+              <svg class="team-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="no-referrer noopener nofollow"
+            >
+              <svg class="team-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- #endregion header -->
     <main>
       <!-- #region Order Service with button -->
@@ -62,7 +155,9 @@
       <section class="section business">
         <div class="container">
           <h1 class="business-h-one">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-button">Order Service</button>
+          <button type="button" class="order-button" data-menu-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion Order Service with button -->
@@ -135,7 +230,7 @@
           <ul class="team-list">
             <li class="team-card">
               <img
-                src="./images/Mark.jpg"
+                src="./images/photo1.jpg"
                 alt="photo Mark Guerrero"
                 width="264"
                 height="260"
@@ -197,7 +292,7 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/tom.jpg"
+                src="./images/photo2.jpg"
                 alt="photo Tom Ford"
                 width="264"
                 height="260"
@@ -259,7 +354,7 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/camila.jpg"
+                src="./images/photo3.jpg"
                 alt="photo Camila Garcia"
                 width="264"
                 height="260"
@@ -321,7 +416,7 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/daniel.jpg"
+                src="./images/photo4.jpg"
                 alt="photo Daniel Wilson"
                 width="264"
                 height="260"
@@ -388,7 +483,7 @@
 
       <!-- #region Our Portfolio -->
 
-      <section class="section">
+      <section class="section clear">
         <div class="container">
           <h2 class="base-h-two">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -511,7 +606,7 @@
       </section>
       <!-- #endregion Our Portfolio -->
     </main>
-    <footer class="footer">
+    <footer class="footer clear">
       <div class="container">
         <div class="footer-info">
           <a href="./index.html" class="logo"
@@ -597,9 +692,9 @@
       </div>
     </footer>
     <!-- modal window is-open-->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay clear" data-modal>
       <div class="modal">
-        <button class="close" type="button" >
+        <button class="close" type="button" data-modal-close>
           <svg class="modal-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -664,7 +759,7 @@
           </div>
           <div class="license">
             <input
-              class="visually-hidden check" 
+              class="visually-hidden check"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
@@ -684,5 +779,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
