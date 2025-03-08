@@ -321,6 +321,15 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media(min-resolution: 192dpi) {
+  .business {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-people-office@2x.jpg);
+  }
+}
 .business-h-one {
   color: #fff;
   font-weight: 700;
@@ -363,6 +372,15 @@ button {
       ),
       url(../images/tablet-people-office.jpg);
   }
+  @media(min-resolution: 192dpi) {
+  .business {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-people-office@2x.jpg);
+  }
+}
   .business-h-one {
     font-size: 56px;
     line-height: 1.07;
@@ -388,6 +406,15 @@ button {
       ),
       url(../images/pc-people-office.jpg);
   }
+  @media(min-resolution: 192dpi) {
+  .business {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/pc-people-office@2x.jpg);
+  }
+}
   .business-h-one {
     margin-bottom: 48px;
   }
